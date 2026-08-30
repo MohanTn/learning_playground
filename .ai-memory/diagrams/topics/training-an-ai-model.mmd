@@ -1,0 +1,42 @@
+flowchart TD
+  subgraph S1[1. Data]
+    D1[Collection] --> D2[Cleaning & Dedup] --> D3[Labeling] --> D4[Preprocessing] --> D5[Tokenization]
+  end
+
+  subgraph S2[2. Architecture]
+    A1[Choose model family] --> A2[Layer sizing] --> A3[Init strategy]
+  end
+
+  subgraph S3[3. Training Loop]
+    T1[Forward pass] --> T2[Loss function] --> T3[Backprop] --> T4[Optimizer step] --> T5{More batches / epochs?}
+    T5 -->|yes| T1
+  end
+
+  subgraph S4[4. Hyperparameter Tuning]
+    H1[Learning rate] --> H2[Batch size] --> H3[Search strategy]
+  end
+
+  subgraph S5[5. Validation & Evaluation]
+    V1[Train/val/test split] --> V2[Metrics] --> V3{Overfitting?}
+  end
+
+  subgraph S6[6. Regularization]
+    R1[Dropout] --> R2[Weight decay] --> R3[Early stopping]
+  end
+
+  subgraph S7[7. Fine-tuning & Transfer Learning]
+    F1[Pretrained base] --> F2[Task-specific head] --> F3[LoRA / adapters]
+  end
+
+  subgraph S8[8. Deployment & Monitoring]
+    M1[Serving] --> M2[Drift detection] --> M3{Retrain needed?}
+  end
+
+  D5 --> A3 --> H3 --> T1
+  T5 -->|no| V1
+  V3 -->|yes| R1
+  R3 --> H1
+  V3 -->|no| F1
+  F3 --> M1
+  M3 -->|yes| D1
+  M3 -->|no| M1

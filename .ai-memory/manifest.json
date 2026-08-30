@@ -1,0 +1,19 @@
+{
+  "routes": [
+    {
+      "keywords": ["train", "training", "training an ai model", "training pipeline", "model training"],
+      "file": "diagrams/topics/training-an-ai-model.mmd",
+      "priority": 9
+    },
+    {
+      "keywords": ["topics", "overview", "sketches", "pages", "llm-inference", "llm-memory", "hybrid-retrieval-pipeline"],
+      "file": "diagrams/topics/overview.mmd",
+      "priority": 6
+    },
+    {
+      "keywords": ["debug", "bug", "fix", "error", "issue"],
+      "file": "diagrams/debug/playbook.mmd",
+      "priority": 9
+    }
+  ]
+}
