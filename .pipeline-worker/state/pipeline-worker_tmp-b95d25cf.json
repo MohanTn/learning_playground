@@ -1,0 +1,34 @@
+{
+  "branch": "pipeline-worker/tmp-b95d25cf",
+  "targetBranch": "main",
+  "worktreePath": "/tmp/pipeline-worker-9SRK25/worktree",
+  "ciFixAttempt": 0,
+  "conflictAttempt": 0,
+  "phase": "diff",
+  "changedFiles": [
+    "codes/ocr_deskew/__pycache__/ocr_deskew.cpython-314.pyc",
+    "codes/ocr_deskew/ocr_deskew.py",
+    "codes/ocr_deskew/requirentments.txt",
+    "enterprise-infra/gcp-rag-ai-integration.excalidraw"
+  ],
+  "untrackedFiles": [
+    ".pipeline-worker/",
+    "codes/ai_billing_agent/",
+    "codes/bm25_index/",
+    "codes/bm25_index_de/",
+    "codes/hybrid_index_delete/",
+    "codes/hybrid_rrf_rerank/",
+    "codes/ocr_deskew/ocr_deskew.ipynb",
+    "codes/orchestrators_101/"
+  ],
+  "startedAt": "2026-09-03T15:05:37.416Z",
+  "updatedAt": "2026-09-03T15:05:37.416Z",
+  "history": [
+    {
+      "at": "2026-09-03T15:05:37.416Z",
+      "phase": "diff",
+      "level": "info",
+      "message": "Created worktree at /tmp/pipeline-worker-9SRK25/worktree (temp branch pipeline-worker/tmp-b95d25cf)"
+    }
+  ]
+}
