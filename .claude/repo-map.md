@@ -1,4 +1,4 @@
-# repo-map /tmp/pipeline-worker-YZJ7gP/worktree | 19 files
+# repo-map /tmp/pipeline-worker-dG7hrn/worktree | 20 files
 fmt: dir/ then "file: name:line ..."; "+" line lists files with no symbols
 
 ./
@@ -29,4 +29,4 @@ enterprise-infra/
 +run.lock
 
 .pipeline-worker/state/
-+pipeline-worker_tmp-b95d25cf.json
++chore_refresh-learning-notebooks.json pipeline-worker_tmp-b95d25cf.json
