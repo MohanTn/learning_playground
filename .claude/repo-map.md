@@ -1,4 +1,4 @@
-# repo-map /tmp/pipeline-worker-9SRK25/worktree | 26 files
+# repo-map /tmp/pipeline-worker-YZJ7gP/worktree | 19 files
 fmt: dir/ then "file: name:line ..."; "+" line lists files with no symbols
 
 ./
@@ -16,26 +16,8 @@ fmt: dir/ then "file: name:line ..."; "+" line lists files with no symbols
 .ai-memory/updates/
 +.gitkeep
 
-codes/ai_billing_agent/
-+ai_billing_agent.ipynb
-
-codes/bm25_index/
-+bm25_index.ipynb
-
-codes/bm25_index_de/
-+bm25_index_de.ipynb
-
-codes/hybrid_index_delete/
-+hybrid_index_delete.ipynb
-
-codes/hybrid_rrf_rerank/
-+hybrid_rrf_rerank.ipynb
-
-codes/ocr_deskew/
-+A-sample-prescription-image-in-grayscale-version.webp ocr_deskew.ipynb
-
-codes/orchestrators_101/
-+orchestrators_101.ipynb
+.claude/
++repo-map.md
 
 data/pages/
 +how-llm-inference-works.svg hybrid-retrieval-pipeline.excalidraw hybrid-retrieval-pipeline.svg llm-inference-flow.excalidraw llm-memory.excalidraw
