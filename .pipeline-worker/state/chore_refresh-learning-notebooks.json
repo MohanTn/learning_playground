@@ -1,0 +1,141 @@
+{
+  "branch": "chore/refresh-learning-notebooks",
+  "targetBranch": "main",
+  "worktreePath": "/tmp/pipeline-worker-YZJ7gP/worktree",
+  "ciFixAttempt": 0,
+  "conflictAttempt": 0,
+  "phase": "done",
+  "changedFiles": [
+    ".claude/repo-map.md",
+    ".pipeline-worker/run.lock",
+    "codes/ai_billing_agent/ai_billing_agent.ipynb",
+    "codes/bm25_index/bm25_index.ipynb",
+    "codes/bm25_index_de/bm25_index_de.ipynb",
+    "codes/hybrid_index_delete/hybrid_index_delete.ipynb",
+    "codes/hybrid_rrf_rerank/hybrid_rrf_rerank.ipynb",
+    "codes/ocr_deskew/A-sample-prescription-image-in-grayscale-version.webp",
+    "codes/ocr_deskew/ocr_deskew.ipynb",
+    "codes/orchestrators_101/orchestrators_101.ipynb",
+    "learning-system-prompt.txt"
+  ],
+  "untrackedFiles": [],
+  "startedAt": "2026-09-10T12:43:06.086Z",
+  "updatedAt": "2026-09-10T12:45:04.763Z",
+  "history": [
+    {
+      "at": "2026-09-10T12:43:06.086Z",
+      "phase": "diff",
+      "level": "info",
+      "message": "Created worktree at /tmp/pipeline-worker-YZJ7gP/worktree (temp branch pipeline-worker/tmp-80e13b47)"
+    },
+    {
+      "at": "2026-09-10T12:43:07.712Z",
+      "phase": "apply",
+      "level": "info",
+      "message": "Applied the captured diff into /tmp/pipeline-worker-YZJ7gP/worktree"
+    },
+    {
+      "at": "2026-09-10T12:43:07.714Z",
+      "phase": "checks",
+      "level": "info",
+      "message": "Checks passed ()"
+    },
+    {
+      "at": "2026-09-10T12:44:08.490Z",
+      "phase": "intent",
+      "level": "info",
+      "message": "Captured intent; renamed to feature branch chore/refresh-learning-notebooks",
+      "tokens": 227627
+    },
+    {
+      "at": "2026-09-10T12:44:08.523Z",
+      "phase": "commit",
+      "level": "info",
+      "message": "Committed \"chore: refresh learning notebooks and teaching prompt\""
+    },
+    {
+      "at": "2026-09-10T12:44:13.181Z",
+      "phase": "mr",
+      "level": "info",
+      "message": "Opened MR/PR https://github.com/MohanTn/learning_playground/pull/2"
+    },
+    {
+      "at": "2026-09-10T12:44:13.185Z",
+      "phase": "watch",
+      "level": "info",
+      "message": "Started watching pipeline"
+    },
+    {
+      "at": "2026-09-10T12:45:04.763Z",
+      "phase": "done",
+      "level": "info",
+      "message": "No CI pipeline found for this MR/PR — nothing to watch"
+    }
+  ],
+  "checks": [],
+  "intent": {
+    "intent": "Refresh the learning-playground's code examples: retire two older mock notebooks and add new ones covering German BM25, hybrid-index deletion, RRF reranking, OCR deskewing, and orchestrators, while tightening the teaching system prompt.",
+    "summary": "Removed the ai_billing_agent and bm25_index notebooks, added five new example notebooks (bm25_index_de, hybrid_index_delete, hybrid_rrf_rerank, ocr_deskew plus its sample image, orchestrators_101), rewrote learning-system-prompt.txt into a tighter teaching framework, and picked up incidental changes to the generated repo-map and pipeline-worker lock file.",
+    "changeType": "chore",
+    "branchSlug": "refresh-learning-notebooks",
+    "commitMessage": "chore: refresh learning notebooks and teaching prompt",
+    "fileChanges": [
+      {
+        "file": ".claude/repo-map.md",
+        "summary": "Auto-generated repo index regenerated for the new worktree path and updated file list, no manual edits."
+      },
+      {
+        "file": ".pipeline-worker/run.lock",
+        "summary": "Generated pipeline-worker lock file's PID value bumped, no functional change."
+      },
+      {
+        "file": "codes/ai_billing_agent/ai_billing_agent.ipynb",
+        "summary": "Deleted the mock AI billing agent notebook (schema-constrained parser plus deterministic GOÄ/GOZ rules engine demo)."
+      },
+      {
+        "file": "codes/bm25_index/bm25_index.ipynb",
+        "summary": "Deleted the original BM25 indexing example notebook."
+      },
+      {
+        "file": "codes/bm25_index_de/bm25_index_de.ipynb",
+        "summary": "Added a new notebook demonstrating BM25 indexing for German-language text (successor to the removed bm25_index notebook), content not directly inspectable in this environment."
+      },
+      {
+        "file": "codes/hybrid_index_delete/hybrid_index_delete.ipynb",
+        "summary": "Added a new notebook demonstrating deletion of documents from a hybrid (sparse+dense) search index, content not directly inspectable in this environment."
+      },
+      {
+        "file": "codes/hybrid_rrf_rerank/hybrid_rrf_rerank.ipynb",
+        "summary": "Added a new notebook demonstrating Reciprocal Rank Fusion reranking of hybrid search results, content not directly inspectable in this environment."
+      },
+      {
+        "file": "codes/ocr_deskew/A-sample-prescription-image-in-grayscale-version.webp",
+        "summary": "Added a sample grayscale prescription image used as OCR/deskewing input for the new ocr_deskew notebook."
+      },
+      {
+        "file": "codes/ocr_deskew/ocr_deskew.ipynb",
+        "summary": "Added a new notebook demonstrating OCR image deskewing using the accompanying sample prescription image, content not directly inspectable in this environment."
+      },
+      {
+        "file": "codes/orchestrators_101/orchestrators_101.ipynb",
+        "summary": "Added a new introductory notebook on orchestrators, content not directly inspectable in this environment."
+      },
+      {
+        "file": "learning-system-prompt.txt",
+        "summary": "Rewrote the Software Architecture teaching system prompt into a tighter structure, adding a 'walk one path start to finish' teaching step and subgraph guidance for multi-system diagrams, and condensing pacing/patience/format/boundary rules."
+      }
+    ],
+    "risk": "low",
+    "riskReason": "All changes are self-contained educational notebooks, a static image asset, a prompt text file, and generated bookkeeping files with no shared application code affected.",
+    "testScenarios": [
+      "Open each new/changed notebook (bm25_index_de, hybrid_index_delete, hybrid_rrf_rerank, ocr_deskew, orchestrators_101) and confirm all cells execute top to bottom without errors.",
+      "Verify the sample prescription .webp image loads correctly and is referenced correctly by ocr_deskew.ipynb.",
+      "Confirm no other notebook or doc still links to the deleted ai_billing_agent.ipynb or bm25_index.ipynb paths.",
+      "Review learning-system-prompt.txt end to end to confirm the rewritten teaching rules are internally consistent (single diagram type per session, subgraph isolation, one-path walkthrough).",
+      "Confirm .claude/repo-map.md and .pipeline-worker/run.lock are regenerated/ignorable artifacts and not manually hand-edited content."
+    ]
+  },
+  "totalTokens": 227627,
+  "mrIid": 2,
+  "mrUrl": "https://github.com/MohanTn/learning_playground/pull/2"
+}
